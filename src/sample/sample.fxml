@@ -1,20 +1,77 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 <?scenebuilder-stylisheet /Styles.css?>
 
-<?import java.net.URL?>
-<VBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" >
-    <stylesheets><URL value="@/Styles.css"/></stylesheets>
-    <TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS"/>
-    <HBox>
-        <TextField onAction="#sendMsg" fx:id="textField" HBox.hgrow="ALWAYS" promptText="Введите сообщение"/>
-        <Button onAction="#sendMsg" text="SendMessage" fx:id="btn1"/>
-    </HBox>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="200.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TextArea fx:id="textArea" editable="false" prefHeight="560.0" prefWidth="400.0" style="-fx-background-color: #F8F8FF;" />
+            <TextField fx:id="textField" promptText="Введите сообщение" layoutY="560.0" onAction="#sendMsg" prefHeight="40.0" prefWidth="360.0" />
+            <Button fx:id="btn1" layoutX="335.0" layoutY="560.0" mnemonicParsing="false" onAction="#sendMsg" prefHeight="40.0" prefWidth="64.0" text="Send"   />
+         </children></Pane>
+      <Pane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #F0FFFF #F0FFF0;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField layoutX="8.0" layoutY="27.0" style="-fx-background-color: #FFFFFF;" text="Search">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="150.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/70490.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Trump_Circle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/maynard-face-circle-grey.png" />
+               </image></ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/20141226549d49b082747.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/Fotka-v-kruge-iyun6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/circle-52.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/kim_face_circle.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/circle4387319.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="95.0" text="Donald" />
+            <Label layoutX="83.0" layoutY="165.0" text="Max" />
+            <Label layoutX="83.0" layoutY="235.0" text="Katrin" />
+            <Label layoutX="83.0" layoutY="305.0" text="William" />
+            <Label layoutX="83.0" layoutY="385.0" text="Jhon" />
+            <Label layoutX="83.0" layoutY="465.0" text="Nataly" />
+            <Label layoutX="83.0" layoutY="545.0" text="Sam" />
+         </children></Pane>
+   </children>
+</AnchorPane>
